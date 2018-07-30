@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SI_ScrollView">
+
+    <RelativeLayout style="@style/SI_RelativeLayout">
+
+        <ImageView
+            android:id="@+id/si_album_cover"
+            style="@style/SI_AlbumCover"
+            tools:src="@drawable/theoffspring_smash" />
+
+        <LinearLayout
+            style="@style/SI_ButtonContainer"
+            android:layout_below="@id/si_album_cover"
+            android:id="@+id/si_song_buttons">
+
+            <ImageButton
+                android:id="@+id/si_play"
+                style="@style/SI_SongButtons"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/si_stop"
+                style="@style/SI_SongButtons"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_stop_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/si_song_name"
+            style="@style/SI_SongName"
+            android:layout_below="@id/si_song_buttons"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            tools:text="Gone Away" />
+
+        <LinearLayout
+            android:id="@+id/songs_layout"
+            style="@style/SI_ArtistAlbumLayout"
+            android:layout_below="@id/si_song_name">
+
+            <LinearLayout style="@style/SI_ArtistLayout">
+
+                <ImageView
+                    style="@style/SI_ArtistImageView"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_account_circle_black_24dp" />
+
+                <TextView
+                    android:id="@+id/si_artist_name"
+                    style="@style/SI_ArtistTextView"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    tools:text="The Offspring" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SI_ArtistLayout">
+
+                <ImageView
+                    style="@style/SI_ArtistImageView"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_album_black_24dp" />
+
+                <TextView
+                    android:id="@+id/si_album_name"
+                    style="@style/SI_ArtistTextView"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    tools:text="Smash" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/si_get_button"
+            style="@style/SI_Button"
+            android:layout_below="@id/songs_layout"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_shop_white_24dp"
+            android:drawableStart="@drawable/ic_shop_white_24dp"
+            android:text="@string/get_google_play" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Librería de música</string>
+    <string name="information_activity_title">Información de la canción</string>
+    <string name="get_google_play">Comprar en Google Play</string>
+</resources>
